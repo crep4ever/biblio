@@ -1,0 +1,133 @@
+@inproceedings{GBD09,
+ author = {Romain {Goffe} and Luc {Brun} and Guillaume {Damiand}},
+ title = {A top-down construction scheme for irregular pyramids.},
+ booktitle = {Fourth International Conference On Computer Vision Theory And Applications (VISAPP'09)},
+ volume = {1},
+ pages = {163--170},
+ month = {February},
+ year = {2009},
+ editor = {AlpeshKumar Ranchordas and Helder Araujo},
+ keywords = {Segmentation; Irregular pyramid; Topological model; Combinatorial map;},
+ pdf = {GoffeAl09-VISAPP.pdf},
+ slides = {GoffeAl09-VISAPP-slides.pdf},
+ abstract = {
+ Hierarchical data structures such as irregular pyramids are used by
+ many applications related to image processing and segmentation. The
+ construction scheme of such pyramids is bottom-up. Such a scheme
+ forbids the definition of a level according to more global
+ information defined at upper levels in the hierarchy. Moreover, the
+ base of the pyramid has to encode any single pixel of the initial
+ image in order to allow the definition of regions of any shape at
+ higher levels. This last constraint raises major issues of memory
+ usage and processing costs when irregular pyramids are applied to
+ large images. The objective of this paper is to define a top-down
+ construction scheme for irregular pyramids. Each level of such a
+ pyramid is encoded by a combinatorial map associated to an explicit
+ encoding of the geometry and the inclusion relationships of the
+ corresponding partition. The resulting structure is a stack of
+ finer and finer partitions obtained by successive splitting
+ operations and is called a top-down pyramid.
+ }
+}
+
+
+@inproceedings{GDB09,
+ author = {Romain {Goffe} and Guillaume {Damiand} and Luc {Brun}},
+ title = {Extraction of tiled top-down irregular pyramids from large images.},
+ booktitle = {13th International Workshop on Combinatorial Image Analysis (IWCIA'09)},
+ series = {Research Publishing Services},
+ publisher = {RPS, Singapore},
+ pages = {123--137},
+ month = {November},
+ year = {2009},
+ editor = {Petra {Wiederhold} and Reneta P. {Barneva}},
+ keywords = {Irregular pyramid; Topological model; Tiled data structure; Combinatorial map;},
+ pdf = {GoffeAl09-IWCIA.pdf},
+ slides = {GoffeAl09-IWCIA-slides.pdf},
+ abstract = {
+ Processing large images is a common issue in the computer vision
+ framework with applications such as satellite or microscopic images.
+ The major problem comes from the size of those images that prevents
+ them from being loaded globally into memory. Moreover, such images
+ contain different information at different levels of resolution. For
+ example, global features, such as the delimitation of a tissue,
+ appear at low resolution whereas finer details, such as cells, can
+ only be distinguished at full resolution. Thus, the objective of
+ this paper is the definition of a suitable hierarchical data
+ structure that would provide full access to all the properties of
+ the image by representing topological information. The idea consists
+ in transposing the notion of tile for top-down topological pyramids
+ to control accurately the amount of memory required by the
+ construction of our model. As a result, this paper defines the
+ topological model of tiled top-down pyramid and proposes a
+ construction scheme that would not depend on the system memory
+ limitations.
+ }
+}
+ 
+
+@inproceedings{GDB10,
+ author = {Romain {Goffe} and Guillaume {Damiand} and Luc {Brun}},
+ title  = {A causal extraction scheme in top-down pyramids for large images segmentation},
+ booktitle = {In 13th International Workshop On Structural and Syntactic Pattern Recognition (SSPR'10)},
+ publisher = {Springer},
+ series = {Lecture Notes in Computer Science},
+ volume = {6218},
+ pages  = {264--274},
+ year  = {2010},
+ month  = {August},
+ pdf = {GoffeAl10-SSPR.pdf},
+ poster = {GoffeAl10-SSPR-poster.pdf},
+ keywords = {Irregular pyramid; Topological model; Tiled data structure; Combinatorial map;},
+ abstract = {
+ Applicative fields based on the analysis of large images must deal
+ with two important problems. First, the size in memory of such
+ images usually forbids a global image analysis hereby inducing
+ numerous problems for the design of a global image
+ partition. Second, due to the high resolution of such images, global
+ features only appear at low resolutions and a single resolution
+ analysis may loose important information. The tiled top-down
+ pyramidal model has been designed to solve this two major
+ challenges. This model provides a hierarchical encoding of the image
+ at single or multiple resolutions using a top-down construction
+ scheme. Moreover, the use of tiles bounds the amount of memory
+ required by the model while allowing global image analysis. The main
+ limitation of this model is the splitting step used to build one
+ additional partition from the above level. Indeed, this step
+ requires to temporary refine the split region up to the pixel level
+ which entails high memory requirements and processing time. In
+ this paper, we propose a new splitting step within the tiled
+ top-down pyramidal framework which overcomes the previously
+ mentioned limitations.
+ }
+}
+
+@inproceedings{GBD11b,
+  author    = {Romain {Goffe} and Luc {Brun} and Guillaume {Damiand}},
+  title     = {Tiled top-down pyramids and segmentation of large histological images},
+  booktitle = {In 8th IAPR - TC-15 Workshop on Graph-based Representations in Pattern Recognition (GBR'11)},
+  publisher = {Springer},
+  editor    = {Xiaoyi {Jiang} and Miquel {Ferrer} and Andrea {Torsello}},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {6658},
+  pages     = {255--264},
+  year      = {2011},
+  month     = {May},
+  pdf       = {GoffeAl11-GBR.pdf},
+  poster    = {GoffeAl11-GBR-poster.pdf},
+  keywords  = {Irregular pyramid; Topological model; Combinatorial map;},
+  abstract  = {
+  Recent microscopic imaging systems such as whole slide scanners
+  provide very large (up to 18GB) high resolution images. Such amounts
+  of memory raise major issues that prevent usual image representation
+  models from being used. Moreover, using such high resolution images,
+  global image features, such as tissues, does not clearly appear at
+  full resolution. Such images contain thus different hierarchical
+  information at different resolutions. This paper presents the model
+  of tiled top-down pyramids which provides a framework to handle such
+  images. This model encodes a hierarchy of partitions of large images
+  defined at different resolutions. We also propose a generic
+  construction scheme of such pyramids whose validity is evaluated on
+  an histological image application.
+  }
+}
